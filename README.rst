@@ -2,17 +2,19 @@
 Quijibo
 =======
 
-*Dude, that's not how you spell "kwijibo"*
+Quijibo Query Executor for SQL Alchemy. Given an SQL Alchemy `table` to be
+queried, this Executor interprets `quijibo`_ Query Trees and constructs an
+SQL Alchemy query, optionally executing it immediately.
 
-Quijibo - it has a "Q" and a "J", and so a good name for a JSON to SQL
-translation layer. Yes, you build a JavaScript object that mirrors a
-query tree, serialize it to JSON, and Quijibo will take your JSON and translate
-it to SQL via SQLAlchemy.
+.. _quijibo: https://github.com/sprin/quijibo
+
+The typical use case is executing a JSON-serialized `quijibo`_ Query Tree that
+has been received in the form of an AJAX request.
 
 Wait, web clients can execute SQL?
 ==================================
 
-No, not really. They can build query trees using JavaScript objects that will
+No, not really. They can build Query Trees using JavaScript objects that will
 be safely translated to a limited subset of SQL.
 
 What SQL dialects are supported?
@@ -38,8 +40,8 @@ the current emphasis is on complex qualifications (WHERE). However, if you like
 to just take the qualification and insert it anywhere in to a server-defined
 query, you can do so.
 
-It is planned to continue extending the capabilities of Quijibo as the
-demand arises, but with only "safe" constructs possible.
+It is planned to continue extending the capabilities of this Quijibo Query
+Executor as the demand arises, but with only "safe" constructs possible.
 
 A "dangerous" add-on is planned, for the cases where you can ensure an
 authenticated client is mapped to a database user with strictly defined
