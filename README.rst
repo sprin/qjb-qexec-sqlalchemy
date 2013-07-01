@@ -1,10 +1,14 @@
-=======
-Quijibo
-=======
+====================
+qjb-qexec-sqlalchemy
+====================
 
-Quijibo Query Executor for SQL Alchemy. Given an SQL Alchemy `table` to be
-queried, this Executor interprets `quijibo`_ Query Trees and constructs an
-SQL Alchemy query, optionally executing it immediately.
+`quijibo`_ Query Executor for `SQL Alchemy`_. Given an `SQL Alchemy`_ `Table`_
+to be queried, this Executor interprets `quijibo`_ Query Trees and constructs
+an `SQL Alchemy`_ query, optionally executing it immediately.
+
+.. _SQL Alchemy: http://www.sqlalchemy.org/
+
+.. _Table: http://docs.sqlalchemy.org/en/latest/core/schema.html#sqlalchemy.schema.Table
 
 .. _quijibo: https://github.com/sprin/quijibo
 
@@ -25,7 +29,7 @@ PostgreSQL.
 What kinds of queries can you do?
 =================================
 
-Because the JSON objects mirror the structure of SQLAlchemy Expression
+Because the JSON objects mirror the structure of `SQL Alchemy`_ Expression
 Language queries, which mirror the structure of the query tree (the result of
 parsing the SQL statement), it is theoretically possible for Quijibo to be able
 execute any arbitrary query that Alchemy can. How much power you want to give
